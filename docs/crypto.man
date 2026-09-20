@@ -1,0 +1,58 @@
+.TH CRYPTO 3 "2026" "y-- standard library" "y-- Library Reference"
+.SH NAME
+Crypto \- Cryptographic hash functions
+.SH DESCRIPTION
+The
+.B Crypto
+module provides essential cryptographic hashing algorithms:
+.B MD5, SHA1, SHA256, SHA3, Keccak, DoubleSHA256.
+.SH FUNCTIONS
+.SS MD5
+.TP
+\fBSYNOPSIS\fR
+string() MD5(data: string())
+.TP
+\fBDESCRIPTION\fR
+Computes the MD5 hash digest of the input string.
+
+.SS SHA1
+.TP
+\fBSYNOPSIS\fR
+string() SHA1(data: string())
+.TP
+\fBDESCRIPTION\fR
+Computes the SHA-1 hash digest of the input string.
+
+.SS SHA256
+.TP
+\fBSYNOPSIS\fR
+string() SHA256(data: string())
+.TP
+\fBDESCRIPTION\fR
+Computes the SHA-256 hash digest of the input string.
+
+.SS SHA3
+.TP
+\fBSYNOPSIS\fR
+string() SHA3(data: string())
+.TP
+\fBDESCRIPTION\fR
+Computes the SHA-3 hash digest of the input string.
+
+.SS Keccak
+.TP
+\fBSYNOPSIS\fR
+string() Keccak(data: string())
+.TP
+\fBDESCRIPTION\fR
+Computes the Keccak hash digest of the input string.
+
+.SS DoubleSHA256
+.TP
+\fBSYNOPSIS\fR
+string() DoubleSHA256(data: string())
+.TP
+\fBDESCRIPTION\fR
+Computes double SHA-256 hash digest of the input string.
+.SH "SEE ALSO"
+Json(3), Http(3)

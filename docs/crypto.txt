@@ -1,0 +1,24 @@
+MODULE: Crypto
+PURPOSE: Cryptographic hash algorithms including MD5, SHA-1, SHA-256, SHA-3, Keccak, and Double-SHA-256.
+
+Import examples:
+    import Crypto
+    from Crypto import SHA256, MD5
+
+────────────────────────────────────────────────────────────────────────────
+NAME
+    MD5, SHA1, SHA256, SHA3, Keccak, DoubleSHA256 - Crypto module
+
+SYNOPSIS
+    string() MD5(data: string())
+    string() SHA1(data: string())
+    string() SHA256(data: string())
+    string() SHA3(data: string())
+    string() Keccak(data: string())
+    string() DoubleSHA256(data: string())
+
+DESCRIPTION
+    Computes cryptographic hash digests of input string data.
+
+RETURN VALUE
+    Hexadecimal string representation of the computed hash digest.

@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(y-lib-crypto)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+find_package(OpenSSL REQUIRED)
+add_library(y-crypto SHARED module.cpp hash-library/md5.cpp hash-library/sha1.cpp hash-library/sha256.cpp hash-library/sha3.cpp hash-library/keccak.cpp)
+target_include_directories(y-crypto PRIVATE ../y---lang/include ../y---lang/src)
+target_link_libraries(y-crypto PRIVATE OpenSSL::SSL OpenSSL::Crypto)
