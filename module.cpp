@@ -1,8 +1,6 @@
-#include "ylang/vm.hpp"
+#include "crypto_hash.hpp"
 #include <iostream>
 
-#include "hash-library/sha256.h"
-#define HL_SHA256 SHA256
 
 
 extern "C" void YlangLoadModule(std::shared_ptr<Env> env, const std::vector<std::string> &symbols) {
@@ -49,4 +47,3 @@ extern "C" void YlangLoadModule(std::shared_ptr<Env> env, const std::vector<std:
 		modVal.ref = moduleNamespace;
 		env->set("Crypto", modVal, false, false);
 	}
-}
